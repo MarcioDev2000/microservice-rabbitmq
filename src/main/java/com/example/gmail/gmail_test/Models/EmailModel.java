@@ -18,7 +18,7 @@ public class EmailModel implements Serializable {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private UUID emailId;
-    private String ownerRef;
+    private UUID userId;
     private String emailFrom;
     private String emailTo;
     private String subject;
